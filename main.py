@@ -4,8 +4,6 @@ import os
 open_folder = 'img'
 saver_folder = 'resize-img'
 
-
-
 files = os.listdir(open_folder)
 
 width = int(input("Enter width (0 for auto): "))
@@ -25,5 +23,5 @@ for file in files:
     resized_image = image.resize((new_width, new_height))
     resized_image.save(saver_folder+'\\'+file)
 
-input("Enter any to close programm")
+input("Enter any key to close programm")
 
